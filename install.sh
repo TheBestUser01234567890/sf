@@ -3,20 +3,20 @@
 echo "cloning..."
 git clone https://github.com/mauro-balades/sf.git
 
-echo "changin current directory"
+echo "changing current directory"
 cd sf
 
-echo "coping shell file to /usr/local/bin/ (using sudo)..."
+echo "copying shell file to /usr/local/bin/ (using sudo)..."
 sudo cp sf /usr/local/bin/sf
 
 echo "creating config folder..."
 mkdir -p ~/.config/sf/
 
-echo "coping sf configuration's file..."
+echo "copying sf configuration file..."
 cp -f "./example/config.sh" ~/.config/sf/
 
 echo "cleaning..."
 cd ..
-sudo rm -rf sf
+sudo rm -f sf
 
 echo "FINISHED!"
